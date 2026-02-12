@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "landing-hero",
+      "description": "A doctor checking a child's health in a rural village setting.",
+      "imageUrl": "/images/health-village-1200x800.jpg",
+      "imageHint": "rural healthcare"
+    },
+    {
+      "id": "doctor-avatar-1",
+      "description": "Portrait of Dr. Anjali Sharma.",
+      "imageUrl": "/images/doctor1-100x100.jpg",
+      "imageHint": "female doctor"
+    },
+    {
+      "id": "doctor-avatar-2",
+      "description": "Portrait of Dr. Rajesh Kumar.",
+      "imageUrl": "/images/doctor2-100x100.jpg",
+      "imageHint": "male doctor"
+    },
+    {
+      "id": "doctor-avatar-3",
+      "description": "Portrait of Dr. Priya Singh.",
+      "imageUrl": "/images/doctor3-100x100.jpg",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "patient-avatar-1",
+      "description": "Avatar for a patient.",
+      "imageUrl": "/images/patient1-100x100.jpg",
+      "imageHint": "person smiling"
+    }
+  ]
+}

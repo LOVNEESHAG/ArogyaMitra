@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ArogyaMitra Color Scheme */
+    --background: 39 100% 97%;        /* Floral white (#FFF8F0) */
+    --foreground: 322 7% 10%;         /* Raisin black (#1A181B) */
+    --card: 0 0% 100%;               /* Pure white for cards */
+    --card-foreground: 322 7% 10%;   /* Raisin black */
+    --popover: 0 0% 100%;
+    --popover-foreground: 322 7% 10%;
+    --primary: 322 7% 10%;           /* Raisin black (#1A181B) */
+    --primary-foreground: 39 100% 97%; /* Floral white */
+    --secondary: 43 86% 70%;         /* Jasmine (#F4D06F) */
+    --secondary-foreground: 322 7% 10%;
+    --muted: 39 50% 95%;             /* Light floral white */
+    --muted-foreground: 322 7% 45%;
+    --accent: 135 96% 48%;           /* Erin (#05F140) */
+    --accent-foreground: 322 7% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 322 7% 88%;
+    --input: 39 50% 96%;
+    --ring: 135 96% 48%;             /* Erin accent */
+    --chart-1: 135 96% 48%;          /* Erin */
+    --chart-2: 43 86% 70%;           /* Jasmine */
+    --chart-3: 322 7% 30%;           /* Dark raisin */
+    --chart-4: 39 80% 85%;           /* Light floral */
+    --chart-5: 200 50% 60%;          /* Complementary blue */
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 280 5% 10%;
+    --foreground: 38 100% 97%;
+    --card: 280 5% 12%;
+    --card-foreground: 38 100% 97%;
+    --popover: 280 5% 12%;
+    --popover-foreground: 38 100% 97%;
+    --primary: 38 100% 97%;
+    --primary-foreground: 280 5% 10%;
+    --secondary: 45 87% 20%;
+    --secondary-foreground: 45 87% 80%;
+    --muted: 280 5% 15%;
+    --muted-foreground: 280 5% 65%;
+    --accent: 135 96% 48%;
+    --accent-foreground: 280 5% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 280 5% 20%;
+    --input: 280 5% 20%;
+    --ring: 135 96% 48%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+  html {
+    @apply scroll-smooth;
+    /* Prevent text auto-scaling that can look like initial zoom on iOS */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
+/* Ensure media never overflow the viewport on small screens */
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
